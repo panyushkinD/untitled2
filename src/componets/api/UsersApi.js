@@ -10,6 +10,7 @@ class UsersApi {
         });
     }
 
+
     async getAllUsers() {
         return await this.#axios.get("/all-users")
     }
