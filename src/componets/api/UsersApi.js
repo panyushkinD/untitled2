@@ -13,6 +13,9 @@ class UsersApi {
     async getAllUsers() {
         return await this.#axios.get("/all-users")
     }
+    async addUsers(userItem) {
+        return await this.#axios.post("/add-user", userItem)
+    }
 
 }
 

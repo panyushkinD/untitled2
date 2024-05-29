@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Table} from 'antd';
 import UsersApi from "../api/UsersApi";
+import AddUsers from "./AddUsers";
 
 const columns = [
     {
@@ -15,7 +16,7 @@ const columns = [
     },
     {
         title: 'Отчество',
-        dataIndex: 'patronymicName',
+        dataIndex: 'patronymic',
         width: 150,
     },
     {
@@ -57,16 +58,20 @@ const UsersTable = () => {
     }, []);
     console.log(data)
     return (
+        <div>
         <Table
             columns={columns}
             dataSource={data}
             pagination={{
                 pageSize: 50,
             }}
-            scroll={{
-                y: 240,
-            }}
+
         />
+            <div>  <AddUsers/>   </div>
+        </div>
+
+
     );
+
 }
 export default UsersTable;
