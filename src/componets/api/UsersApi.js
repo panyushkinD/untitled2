@@ -19,11 +19,6 @@ class UsersApi {
         return await this.#axios.post("/add-users", userItem)
     }
 
-    async deleteUsers() {
-        return await this.#axios.delete("/delete-users")
-
-    }
-
 }
 
 export default UsersApi;

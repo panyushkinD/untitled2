@@ -16,7 +16,7 @@ const columns = [
     },
     {
         title: 'Отчество',
-        dataIndex: 'patronymic',
+        dataIndex: 'patronymicName',
         width: 150,
     },
     {

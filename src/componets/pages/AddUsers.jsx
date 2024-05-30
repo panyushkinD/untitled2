@@ -21,7 +21,7 @@ const AddUsers = () => {
 
     let [lastName, setLastName] = useState('');
     let [firstName, setFirstName] = useState('');
-    let [patronymic, setPatronymic] = useState('');
+    let [patronymicName, setPatronymic] = useState('');
     let [login, setLogin] = useState('');
     let [password, setPassword] = useState('');
     let [age, setAge] = useState(0);
@@ -31,7 +31,7 @@ const AddUsers = () => {
     let userItem = {
         lastName,
         firstName,
-        patronymic,
+        patronymicName,
         login,
         password,
         age,
@@ -134,7 +134,7 @@ const AddUsers = () => {
 
                         <Form.Item
                             label="Отчество"
-                            name="patronymic"
+                            name="patronymicName"
                             onChange={event => {
                                 setPatronymic(event.target.value)
                             }}
