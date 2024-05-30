@@ -18,6 +18,10 @@ class UsersApi {
     async addUsers(userItem) {
         return await this.#axios.post("/add-users", userItem)
     }
+    async deleteUsers(id) {
+        const response = await this.#axios.delete(`/delete-users/${id}`);
+
+    }
 
 }
 

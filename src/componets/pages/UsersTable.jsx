@@ -2,16 +2,17 @@ import React, {useEffect, useState} from 'react';
 import {Table} from 'antd';
 import UsersApi from "../api/UsersApi";
 import AddUsers from "./AddUsers";
+import DeleteUsers from "./DeleteUsers";
 
 const columns = [
     {
         title: 'Имя',
-        dataIndex: 'lastName',
+        dataIndex: 'firstName',
         width: 150,
     },
     {
         title: 'Фамилия',
-        dataIndex: 'firstName',
+        dataIndex: 'lastName',
         width: 150,
     },
     {
@@ -60,15 +61,16 @@ const UsersTable = () => {
     console.log(data)
     return (
         <div>
-        <Table
-            columns={columns}
-            dataSource={data}
-            pagination={{
-                pageSize: 50,
-            }}
+            <Table
+                columns={columns}
+                dataSource={data}
+                pagination={{
+                    pageSize: 50,
+                }}
 
-        />
-            <div>  <AddUsers/>   </div>
+            />
+            <div><AddUsers/></div>
+            <div><DeleteUsers/></div>
         </div>
 
 
