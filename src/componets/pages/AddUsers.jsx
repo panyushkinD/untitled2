@@ -178,11 +178,11 @@ const AddUsers = () => {
                         onChange={changeGender}
                         options={[
                             {
-                                value: '2',
+                                value: '1',
                                 label: 'Мужской',
                             },
                             {
-                                value: '1',
+                                value: '2',
                                 label: 'Женский',
                             },
 
