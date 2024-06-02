@@ -3,6 +3,7 @@ import {Table} from 'antd';
 import UsersApi from "../api/UsersApi";
 import AddUsers from "./AddUsers";
 import DeleteUsers from "./DeleteUsers";
+import UpdateUser from "./UpdateUser";
 
 const columns = [
     {
@@ -71,6 +72,7 @@ const UsersTable = () => {
             />
             <div><AddUsers/></div>
             <div><DeleteUsers/></div>
+            <div><UpdateUser/></div>
         </div>
 
 

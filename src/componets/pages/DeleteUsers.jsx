@@ -6,6 +6,7 @@ const DeleteUsers = () => {
     const api = new UsersApi();
     const [id, setId] = useState(null);
 
+
     const  deleteUser = () => {
         api.deleteUsers(id)
             .then(response =>
